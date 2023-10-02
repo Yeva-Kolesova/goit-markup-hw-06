@@ -978,7 +978,7 @@ body {
     }
 
     .subscribe-input{
-        width: 264px;
+        min-width: 264px;
     }
 }
 /**
