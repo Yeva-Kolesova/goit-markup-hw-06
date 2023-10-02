@@ -59,6 +59,17 @@
             </li>
           </ul>
         </address>
+
+        <button
+          class="toggle-menu js-open-menu"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="toggle-menu-icon" width="32" height="32">
+            <use href="./images/icons.svg#icon-menu-hamburger"></use>
+          </svg>
+        </button>
       </div>
     </header>
 
@@ -74,7 +85,7 @@
       </section>
 
       <!-- benefits section -->
-      <section class="section-indent">
+      <section class="benefits-wrapper section-indent">
         <!-- screenreader info -->
         <div class="container">
           <h2 class="visually-hidden">Our benefits</h2>
@@ -86,7 +97,7 @@
                   <use href="./images/icons.svg#icon-benefits-antenna"></use>
                 </svg>
               </div>
-              <h3 class="benefits-heading item-heading">Strategy</h3>
+              <h3 class="benefits-heading">Strategy</h3>
 
               <!-- class="section-text" вимагається під час тестування - 
           але задані стилі для тексту як базові у тегу body
@@ -95,7 +106,7 @@
           Якщо обов'язково, то тоді які характеристики дефолтні по тексту мають
           бути у тегу body -->
 
-              <p class="section-text">
+              <p class="benefits-text section-text">
                 Our goal is to identify the business problem to walk away with
                 the perfect and creative solution.
               </p>
@@ -106,8 +117,8 @@
                   <use href="./images/icons.svg#icon-benefits-clock"></use>
                 </svg>
               </div>
-              <h3 class="benefits-heading item-heading">Punctuality</h3>
-              <p class="section-text">
+              <h3 class="benefits-heading">Punctuality</h3>
+              <p class="benefits-text section-text">
                 Bring the key message to the brand's audience for the best price
                 within the shortest possible time.
               </p>
@@ -118,8 +129,8 @@
                   <use href="./images/icons.svg#icon-benefits-diagram"></use>
                 </svg>
               </div>
-              <h3 class="benefits-heading item-heading">Diligence</h3>
-              <p class="section-text">
+              <h3 class="benefits-heading">Diligence</h3>
+              <p class="benefits-text section-text">
                 Research and confirm brands that present the strongest digital
                 growth opportunities and minimize risk.
               </p>
@@ -130,8 +141,8 @@
                   <use href="./images/icons.svg#icon-benefits-astrounaut"></use>
                 </svg>
               </div>
-              <h3 class="benefits-heading item-heading">Technologies</h3>
-              <p class="section-text">
+              <h3 class="benefits-heading">Technologies</h3>
+              <p class="benefits-text section-text">
                 Design practice focused on digital experiences. We bring forth a
                 deep passion for problem-solving.
               </p>
@@ -141,28 +152,40 @@
       </section>
 
       <!-- skills section -->
-      <section class="section-indent">
+      <section class="skills-wrapper section-indent">
         <div class="container">
           <h2 class="section-heading">What are we doing</h2>
 
           <ul class="skills-list list flex-template card-set">
             <li class="card-set-item">
               <img
-                src="./images/main-page/work-example/work-example-desktop.jpg"
+                srcset="
+                  ./images/main-page/work-example/skills-img-1_desk.jpg    1x,
+                  ./images/main-page/work-example/skills-img-1_desk@2x.jpg 2x
+                "
+                src="./images/main-page/work-example/skills-img-1_desk.jpg    1x"
                 alt="photo for website creating skill for desktop version"
                 width="360"
               />
             </li>
             <li class="card-set-item">
               <img
-                src="./images/main-page/work-example/work-example-chat.jpg"
+                srcset="
+                  ./images/main-page/work-example/skills-img-2_desk.jpg    1x,
+                  ./images/main-page/work-example/skills-img-2_desk@2x.jpg 2x
+                "
+                src="./images/main-page/work-example/skills-img-2_desk.jpg"
                 alt="photo for chat creating"
                 width="360"
               />
             </li>
             <li class="card-set-item">
               <img
-                src="./images/main-page/work-example/work-example-phone.jpg"
+                srcset="
+                  ./images/main-page/work-example/skills-img-3_desk.jpg    1x,
+                  ./images/main-page/work-example/skills-img-3_desk@2x.jpg 2x
+                "
+                src="./images/main-page/work-example/skills-img-3_desk.jpg"
                 alt="photo for website creating skill for phone version"
                 width="360"
               />
@@ -180,6 +203,10 @@
             <li class="temmate-item">
               <div class="teammate-img-container">
                 <img
+                  srcset="
+                    ./images/main-page/team-mate/team-mate-pd.jpg    1x,
+                    ./images/main-page/team-mate/team-mate-pd@2x.jpg 2x
+                  "
                   src="./images/main-page/team-mate/team-mate-pd.jpg"
                   alt="Mark Guerrero photo"
                   width="264"
@@ -226,6 +253,10 @@
             <li class="temmate-item">
               <div class="teammate-img-container">
                 <img
+                  srcset="
+                    ./images/main-page/team-mate/team-mate-fe.jpg    1x,
+                    ./images/main-page/team-mate/team-mate-fe@2x.jpg 2x
+                  "
                   src="./images/main-page/team-mate/team-mate-fe.jpg"
                   alt="Tom Ford photo"
                   width="264"
@@ -272,6 +303,10 @@
             <li class="temmate-item">
               <div class="teammate-img-container">
                 <img
+                  srcset="
+                    ./images/main-page/team-mate//team-mate-marketing.jpg   1x,
+                    ./images/main-page/team-mate/team-mate-marketing@2x.jpg 2x
+                  "
                   src="./images/main-page/team-mate/team-mate-marketing.jpg"
                   alt="Camila Garcia photo"
                   width="264"
@@ -318,6 +353,10 @@
             <li class="temmate-item">
               <div class="teammate-img-container">
                 <img
+                  srcset="
+                    ./images/main-page/team-mate/team-mate-ui.jpg    1x,
+                    ./images/main-page/team-mate/team-mate-ui@2x.jpg 2x
+                  "
                   src="./images/main-page/team-mate/team-mate-ui.jpg"
                   alt="Daniel Wilson photo"
                   width="264"
@@ -421,7 +460,7 @@
     <footer class="footer-wrapper">
       <div class="container flex-template">
         <!-- контейнер для блоку - лого та текст; на випадок, якщо з'явиться ще один блок із соц. мережами справа -->
-        <div class="footer-left-container">
+        <div class="footer-left-container flex-template">
           <a href="./index.html" class="logo link"
             >Web<span class="colored-text">Studio</span></a
           >
@@ -430,7 +469,7 @@
             digital marketing & growth solutions.
           </p>
         </div>
-        <div class="footer-center-container">
+        <div class="footer-center-container flex-template">
           <p class="footer-subject">Social media</p>
 
           <ul class="socials-list flex-template">
@@ -465,10 +504,10 @@
           </ul>
         </div>
 
-        <div class="footer-right-container">
+        <div class="footer-right-container flex-template">
           <p class="footer-subject">Subscribe</p>
 
-          <form class="subscribe-form" action="#">
+          <form class="subscribe-form flex-template" action="#">
             <label class="subscribe-label">
               <input
                 class="subscribe-input"
@@ -591,6 +630,84 @@
       </div>
     </div>
 
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg class="close-icon" width="8" height="8">
+          <use href="./images/icons.svg#icon-cross"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu">
+        <li><a href="./index.html" class="mobile-nav-link link">Studio</a></li>
+        <li>
+          <a href="./portfolio.html" class="mobile-nav-link link">Portfolio</a>
+        </li>
+        <li><a href="" class="mobile-nav-link link">Contacts</a></li>
+      </ul>
+
+      <div class="mobile-nav-bottom">
+        <address class="auth-wrapper">
+          <ul class="auth-nav list flex-template">
+            <li class="nav-item">
+              <a class="nav-link link accent-child" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+        </address>
+
+        <ul class="socials-list flex-template">
+          <li class="socials-item">
+            <a class="socials-link" href="">
+              <svg class="socials-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-instagram-icon"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials-item">
+            <a class="socials-link" href="">
+              <svg class="socials-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-twitter-icon"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials-item">
+            <a class="socials-link" href="">
+              <svg class="socials-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-facebook-icon"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials-item">
+            <a class="socials-link" href="">
+              <svg class="socials-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-linkedin-icon"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
     <script src="./js/modal.js"></script>
+
+    <!-- Mask for inputs -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.0/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/inputmask@5.0.8/dist/jquery.inputmask.min.js"></script>
+    <script src="./js/input-mask.js"></script>
+    <!-- Mobile menu -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>
